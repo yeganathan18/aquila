@@ -1,4 +1,4 @@
-import "../styles/globals.css";
+import 'tailwindcss/tailwind.css'
 import { ApolloProvider } from "@apollo/client";
 import { useApollo } from "../lib/apolloClient";
 import BooksList from "../components/booksLists";
