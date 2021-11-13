@@ -1,9 +1,10 @@
 import 'tailwindcss/tailwind.css'
 import { ApolloProvider } from "@apollo/client";
-import { useApollo } from "../lib/apolloClient";
-import BooksList from "../components/booksLists";
+import { useApollo } from "../src/graphql/apollo/apolloClient";
+import BooksList from '../src/components/booksLists';
 
 function MyApp({ Component, pageProps }) {
+  
   const apolloClient = useApollo(pageProps.initialApolloState);
 
   return (

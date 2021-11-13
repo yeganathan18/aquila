@@ -1,15 +1,5 @@
-import { gql, useQuery } from "@apollo/client";
-import { ALL_BOOKS_QUERY } from "../src/graphql/queries/book";
-
-// export const ALL_BOOKS_QUERY = gql`
-//   query {
-//     books {
-//       id
-//       title
-//       isbn
-//     }
-//   }
-// `;
+import { useQuery } from "@apollo/client";
+import { ALL_BOOKS_QUERY } from "../graphql/queries/book";
 
 function BooksList() {
   const { loading, error, data } = useQuery(ALL_BOOKS_QUERY);
