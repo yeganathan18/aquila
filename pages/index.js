@@ -1,4 +1,7 @@
 import Head from 'next/head'
+import Header from '../src/components/Header';
+import Nav from '../src/components/nav'
+
 
 const Home = () => {
   return (
@@ -8,7 +11,15 @@ const Home = () => {
         <meta name="description" content="National IJK School, Irinjalakuda" />
         <link rel="icon" href="/home-96.png" />
       </Head>
-
+      <Header />
+      <hr
+          style={{
+            color: "#000000",
+            height: 0.5,
+            borderColor: "#000000",
+          }}
+        />
+      {/* <Nav /> */}
       <main>
         <h1 className="text-center text-6xl p-7">
           Welcome to <a href="https://nextjs.org" className="text-blue-600">Next.js!</a>
