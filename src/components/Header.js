@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 
+
 const HeaderStyle = styled.div`
   font-size: 0.85rem;
   font-family: "Inter", sans-serif;
@@ -9,7 +10,7 @@ const HeaderStyle = styled.div`
 const Header = () => {
   return (
     <HeaderStyle>
-      <div className="flex justify-between">
+      <div className="md-10 flex justify-around">
         <h3 className="flex-initial">IRUNJALAKUDA - 680121</h3>
         <div className="md:order-last">
           <ul className="flex justify-center">
@@ -23,7 +24,7 @@ const Header = () => {
               <p>HSS: 0480 - 2821248</p>
             </li>
             <li className="mr-6">
-              EMAIL: <a href="contact@nationalhss.com">contact@nationalhss.com</a>
+              EMAIL: <a href="mailto:contact@nationalhss.com">contact@nationalhss.com</a>
             </li>
           </ul>
         </div>
