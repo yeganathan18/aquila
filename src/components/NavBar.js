@@ -1,45 +1,57 @@
 import styled from "@emotion/styled";
 import Link from "next/link";
 
+const StyledNavBar = styled.nav`
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  border-bottom: 2px solid #2196f3;
+`;
 
 const NavBar = () => {
   return (
+    <StyledNavBar>
         <nav className="flex justify-around">
             <div className="flex-initial">
                 <Link href="/">
-                    <a>National Higher Secondary School</a>
+                    National Higher Secondary School
                 </Link>
             </div>
             <div className="md:order-last">
-                <ul className="flex justify-around">
-                    <li className="mr-6">
+                <ul className="flex gap-8 justify-around">
+                    <li>
                         <Link href="/">
-                            <a>Home</a>
+                            Home
                         </Link>
                     </li>
-                    <li className="mr-6">
+                    <li>
                         <Link href="/">
-                            <a>About</a>
+                            About
                         </Link>
                     </li>
-                    <li className="mr-6">
+                    <li>
                         <Link href="/">
-                            <a>Gallery</a>
+                            Gallery
                         </Link>
                     </li>
-                    <li className="mr-6">
+                    <li>
                         <Link href="/">
-                            <a>Alumni</a>
+                            Alumni
                         </Link>
                     </li>
-                    <li className="mr-6">
+                    <li>
                         <Link href="/">
-                            <a>Contact</a>
+                            Contact
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/">
+                           Search
                         </Link>
                     </li>
                 </ul>
             </div>
         </nav>
+    </StyledNavBar>
   );
 };
 
