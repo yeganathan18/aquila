@@ -8,6 +8,30 @@ import Link from '@mui/material/Link';
 import GlobalStyles from '@mui/material/GlobalStyles';
 import Container from '@mui/material/Container';
 
+const navItems = [
+    {
+        name: 'Home',
+        path: '/',
+    },
+    {
+        name: 'About',
+        path: '/about',
+    },
+    {
+        name: 'Gallery',
+        path: '/gallery',
+    },
+    {
+        name: 'Alumni',
+        path: '/alumni',
+    },
+    {
+        name: 'Contact',
+        path: '/contact',
+    },
+];
+
+
 const NavBar = () => {
 
     return (
@@ -32,51 +56,21 @@ const NavBar = () => {
                         Syncrolaze
                     </Typography>
                     <nav>
-                        <Link
-                            color="#3399ff"
-                            href="#"
-                            sx={{my: 1, mx: 1.5}}
-                            underline="none"
-                            fontWeight="700"
-                        >
-                            Home
-                        </Link>
-                        <Link
-                            color="#3399ff"
-                            href="#"
-                            sx={{my: 1, mx: 1.5}}
-                            underline="none"
-                            fontWeight="700"
-                        >
-                            About
-                        </Link>
-                        <Link
-                            color="#3399ff"
-                            href="#"
-                            sx={{my: 1, mx: 1.5}}
-                            underline="none"
-                            fontWeight="700"
-                        >
-                            Gallery
-                        </Link>
-                        <Link
-                            color="#3399ff"
-                            href="#"
-                            sx={{my: 1, mx: 1.5}}
-                            underline="none"
-                            fontWeight="700"
-                        >
-                            Alumni
-                        </Link>
-                        <Link
-                            color="#3399ff"
-                            href="#"
-                            sx={{my: 1, mx: 1.5}}
-                            underline="none"
-                            fontWeight="700"
-                        >
-                            Contact
-                        </Link>
+                        {
+                            navItems.map((item) => (
+                                    <Link
+                                        key={item.name}
+                                        color="#3399ff"
+                                        href={item.path}
+                                        sx={{my: 1, mx: 1.5}}
+                                        underline="none"
+                                        fontWeight="700"
+                                    >
+                                        {item.name}
+                                    </Link>
+                                )
+                            )
+                        }
                     </nav>
                     <Button href="#" variant="outlined"
                             sx={{my: 1, mx: 1.5, borderRadius: "15px", fontWeight: "700", textTransform: "none"}}>
