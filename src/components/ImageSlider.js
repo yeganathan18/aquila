@@ -6,10 +6,9 @@ import Container from "@mui/material/Container";
 
 const ImageSlider = () => {
     const slideImages = [
-        "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
-        "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
-        "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
-        "https://images.unsplash.com/photo-1444525873963-75d329ef9e1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+        "/../public/assets/images/slide-1.jpeg",
+        "/../public/assets/images/slide-2.jpeg",
+        "/../public/assets/images/slide-3.jpeg",
     ];
 
     const fadeProperties = {
@@ -23,17 +22,17 @@ const ImageSlider = () => {
                 <Slide {...fadeProperties}>
                     <div className="each-fade">
                         <div>
-                            <Image src={slideImages[0]} alt="hi" width="1800" height="500" />
+                            <Image src={slideImages[0]} alt="hi" width="1800" height="500" layout='responsive'/>
                         </div>
                     </div>
                     <div className="each-fade">
                         <div>
-                            <Image src={slideImages[1]} alt="hi" width="1800" height="500" />
+                            <Image src={slideImages[1]} alt="hi" width="1800" height="500" layout='responsive'/>
                         </div>
                     </div>
                     <div className="each-fade">
                         <div>
-                            <Image src={slideImages[2]} alt="hi" width="1800" height="500" />
+                            <Image src={slideImages[2]} alt="hi" width="1800" height="500" layout='responsive'/>
                         </div>
                     </div>
                 </Slide>

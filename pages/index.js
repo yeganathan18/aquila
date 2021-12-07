@@ -1,11 +1,11 @@
 import Head from 'next/head'
-import NavBar from '../src/components/NavBar';
-import Footer from "../src/components/Footer";
+import NavBar from '../src/components/layout/NavBar';
+import Footer from "../src/components/layout/Footer";
 import ImageSlider from "../src/components/ImageSlider";
-import AboutBox from "../src/components/AboutBox";
+import IntroSection from "../src/components/IntroSection";
 
 
-const Home = () => {
+const IndexPage = () => {
     return (
         <div className="md:w-100">
             <Head>
@@ -15,14 +15,14 @@ const Home = () => {
                       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
                       crossOrigin="anonymous"/>
 
-                <link rel="icon" href={"../../favicons/home-96.png"} />
+                <link rel="icon" href={"../../favicons/home-96.png"}/>
             </Head>
-            <NavBar />
-            <ImageSlider />
-            <AboutBox />
-            <Footer />
+            <NavBar/>
+            <ImageSlider/>
+            <IntroSection />
+            <Footer/>
         </div>
     )
 }
 
-export default Home;
+export default IndexPage;
