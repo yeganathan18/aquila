@@ -22,8 +22,8 @@ const navItems = [
         path: '/gallery',
     },
     {
-        name: 'Alumni',
-        path: '/alumni',
+        name: 'Blogs',
+        path: '/blogs',
     },
     {
         name: 'Contact',
@@ -53,7 +53,7 @@ const NavBar = () => {
                         flexGrow: 1,
                         fontWeight: '500',
                     }}>
-                        Syncrolaze
+                        National Higher Secondary School
                     </Typography>
                     <nav>
                         {
@@ -78,18 +78,6 @@ const NavBar = () => {
                     </Button>
                 </Toolbar>
             </AppBar>
-            {/* Hero unit */}
-            <Container disableGutters maxWidth="full" component="main" sx={{pt: 8, pb: 6, backgroundColor: '#1b263b'}}>
-                <Typography
-                    component="h1"
-                    variant="h2"
-                    align="center"
-                    color="primary"
-                    gutterBottom
-                >
-                    Hello world!
-                </Typography>
-            </Container>
         </React.Fragment>
     );
 }

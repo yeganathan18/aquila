@@ -23,25 +23,24 @@ function Copyright(props) {
 
 const footers = [
     {
-        title: 'Company',
-        description: ['Team', 'History', 'Contact us', 'Locations'],
+        title: 'Information',
+        description: ['Admission', 'Co-curricular', 'Campus', 'Exam Result'],
     },
     {
-        title: 'Features',
+        title: 'Useful Links',
         description: [
-            'Cool stuff',
-            'Random feature',
-            'Team feature',
-            'Developer stuff',
-            'Another one',
+            'About us',
+            'History',
+            'Committee Members',
+            'Gallery',
         ],
     },
     {
-        title: 'Resources',
-        description: ['Resource', 'Resource name', 'Another resource', 'Final resource'],
+        title: 'Other Links',
+        description: ['Blogs', 'Alumni', 'PTA'],
     },
     {
-        title: 'Legal',
+        title: 'Contact Info',
         description: ['Privacy policy', 'Terms of use'],
     },
 ];
@@ -54,7 +53,6 @@ const Footer = () => {
         <React.Fragment>
             <GlobalStyles styles={{ul: {margin: 0, padding: 0, listStyle: 'none'}}}/>
             <CssBaseline/>
-
             {/* Footer */}
             <Container
                 maxWidth="md"

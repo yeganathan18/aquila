@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import NavBar from '../src/components/NavBar';
 import Footer from "../src/components/Footer";
+import ImageSlider from "../src/components/ImageSlider";
+import AboutBox from "../src/components/AboutBox";
 
 
 const Home = () => {
@@ -15,8 +17,10 @@ const Home = () => {
 
                 <link rel="icon" href={"../../favicons/home-96.png"} />
             </Head>
-            <NavBar/>
-            <Footer/>
+            <NavBar />
+            <ImageSlider />
+            <AboutBox />
+            <Footer />
         </div>
     )
 }
