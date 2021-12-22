@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import headerNavLinks from '../data/headerNavLinks';
+import { headerNavLinks } from '../data/headerNavLinks';
 import { Logo } from '../templates/Logo';
 import { AppConfig } from '../utils/AppConfig';
 import { Background } from './Background';
