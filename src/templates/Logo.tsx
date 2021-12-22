@@ -11,7 +11,9 @@ const Logo = (props: ILogoProps) => {
     : 'font-semibold text-xl';
 
   return (
-    <span className={`text-gray-900 inline-flex items-center ${fontStyle}`}>
+    <span
+      className={`text-gray-900 inline-flex items-center cursor-pointer ${fontStyle}`}
+    >
       <svg
         className="text-primary-500 stroke-current mr-1"
         xmlns="http://www.w3.org/2000/svg"
@@ -29,8 +31,7 @@ const Logo = (props: ILogoProps) => {
         <rect x="15" y="4" width="6" height="16" rx="1" />
         <path d="M4 20h14" />
       </svg>
-
-      {AppConfig.site_name}
+      <a>{AppConfig.site_name}</a>
     </span>
   );
 };

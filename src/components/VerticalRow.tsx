@@ -9,7 +9,7 @@ type IVerticalFeatureRowProps = {
   reverse?: boolean;
 };
 
-const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
+const VerticalRow = (props: IVerticalFeatureRowProps) => {
   const verticalFeatureClass = className(
     'mt-20',
     'flex',
@@ -36,4 +36,4 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
   );
 };
 
-export { VerticalFeatureRow };
+export { VerticalRow };

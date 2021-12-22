@@ -53,7 +53,7 @@ const footers = [
   },
 ];
 
-const NewFooter = () => {
+const Footer = () => {
   // @ts-ignore
   return (
     <React.Fragment>
@@ -102,4 +102,4 @@ const NewFooter = () => {
   );
 };
 
-export default NewFooter;
+export default Footer;

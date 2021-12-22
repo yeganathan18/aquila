@@ -1,4 +1,4 @@
-const Blog = () => {
+const Blogs = () => {
   return (
     <div className="container text-center">
       <h1>Contact</h1>
@@ -7,4 +7,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default Blogs;
