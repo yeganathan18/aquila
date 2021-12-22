@@ -13,6 +13,7 @@ import Typography from '@mui/material/Typography';
 
 type ICopyWriteProps = {
   children: ReactNode;
+  sx?: object;
 };
 
 function Copyright(props: ICopyWriteProps) {
@@ -53,6 +54,7 @@ const footers = [
 ];
 
 const NewFooter = () => {
+  // @ts-ignore
   return (
     <React.Fragment>
       <GlobalStyles
@@ -92,6 +94,7 @@ const NewFooter = () => {
             </Grid>
           ))}
         </Grid>
+        {/* @ts-ignore */}
         <Copyright sx={{ mt: 5 }} />
       </Container>
       {/* End footer */}
