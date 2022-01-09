@@ -1,10 +1,10 @@
 import Link from 'next/link';
 
-import { headerNavLinks } from '../data/headerNavLinks';
 import { Logo } from '../templates/Logo';
 import { AppConfig } from '../utils/AppConfig';
 import { Background } from './Background';
 import Footer from './Footer';
+import { headerNavLinks } from './headerNavLinks';
 import { Meta } from './Meta';
 import MobileNav from './MobileNav';
 import { Section } from './Section';
