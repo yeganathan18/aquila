@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import * as React from 'react';
 import { ReactNode } from 'react';
 
@@ -8,8 +7,6 @@ import GlobalStyles from '@mui/material/GlobalStyles';
 import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
-// eslint-disable-next-line import/order
-// eslint-disable-next-line import/order
 
 type ICopyWriteProps = {
   children: ReactNode;
@@ -24,12 +21,10 @@ function Copyright(props: ICopyWriteProps) {
       align="center"
       {...props}
     >
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
+      {'Built by '}
+      <Link color="primary" className="no-underline" href="https://mui.com/">
         Syncrolaze
       </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
     </Typography>
   );
 }
@@ -37,19 +32,36 @@ function Copyright(props: ICopyWriteProps) {
 const footers = [
   {
     title: 'Information',
-    description: ['Admission', 'Co-curricular', 'Campus', 'Exam Result'],
+    description: [
+      { name: 'Admission', link: '/admission' },
+      { name: 'Co-curricular', link: '/co-curricular' },
+      { name: 'Campus', link: '/campus' },
+      { name: 'Exam Result', link: '/exam-result' },
+    ],
   },
   {
     title: 'Useful Links',
-    description: ['About us', 'History', 'Committee Members', 'Gallery'],
+    description: [
+      { name: 'About us', link: '/about' },
+      { name: 'History', link: '/history' },
+      { name: 'Committee Members', link: '/committee-members' },
+      { name: 'Gallery', link: '/gallery' },
+    ],
   },
   {
     title: 'Other Links',
-    description: ['Blogs', 'Alumni', 'PTA'],
+    description: [
+      { name: 'Blogs', link: '/blogs' },
+      { name: 'Alumni', link: '/alumni' },
+      { name: 'PTA', link: '/pta' },
+    ],
   },
   {
     title: 'Contact Info',
-    description: ['Privacy policy', 'Terms of use'],
+    description: [
+      { name: 'Privacy policy', link: '/privacy-policy' },
+      { name: 'Terms of use', link: '/terms-of-use' },
+    ],
   },
 ];
 
@@ -78,15 +90,15 @@ const Footer = () => {
               </Typography>
               <ul>
                 {footer.description.map((item) => (
-                  <li key={item}>
+                  <li key={item.name}>
                     <Link
-                      href="#"
+                      href={item.link}
                       variant="subtitle1"
                       underline="none"
                       color="#3399ff"
                       fontWeight="700"
                     >
-                      {item}
+                      {item.name}
                     </Link>
                   </li>
                 ))}
