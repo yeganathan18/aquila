@@ -1,11 +1,11 @@
-import * as React from 'react';
+import * as React from 'react'
 
-import { useMediaQuery } from '@mui/material';
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
-import { useRouter } from 'next/router';
+import { useMediaQuery } from '@mui/material'
+import ImageList from '@mui/material/ImageList'
+import ImageListItem from '@mui/material/ImageListItem'
+import { useRouter } from 'next/router'
 
-import CustomLink from '../../components/Link';
+import CustomLink from '../../components/Link'
 
 const itemData = [
   {
@@ -56,13 +56,13 @@ const itemData = [
     img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
     title: 'Bike',
   },
-];
+]
 
 const Event = () => {
-  const router = useRouter();
-  const { slug } = router.query;
-  const md = useMediaQuery('(min-width:768px)');
-  const sm = useMediaQuery('(min-width:425px)');
+  const router = useRouter()
+  const { slug } = router.query
+  const md = useMediaQuery('(min-width:768px)')
+  const sm = useMediaQuery('(min-width:425px)')
   // eslint-disable-next-line consistent-return
   const ImageLister = () => {
     if (md) {
@@ -76,13 +76,13 @@ const Event = () => {
                   src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
                   srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
                   alt={item.title}
-                  loading="lazy"
+                  loading='lazy'
                 />
               </ImageListItem>
             ))}
           </ImageList>
         </>
-      );
+      )
     }
 
     if (sm) {
@@ -96,30 +96,30 @@ const Event = () => {
                   src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
                   srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
                   alt={item.title}
-                  loading="lazy"
+                  loading='lazy'
                 />
               </ImageListItem>
             ))}
           </ImageList>
         </>
-      );
+      )
     }
-  };
+  }
 
   return (
-    // eslint-disable-next-line react/jsx-no-undef
     <>
-      <div className="divide-y divide-gray-200 dark:divide-gray-700 max-w-screen-lg mx-auto px-3">
-        <div className="pt-6 pb-6 space-y-2 md:space-y-5">
-          <p className="text-3xl leading-7 tracking-tight text-gray-600  dark:text-gray-400 sm:text-4xl md:text-3xl">
+      <div className='divide-y divide-gray-200 dark:divide-gray-700 max-w-screen-lg mx-auto px-3'>
+        <div className='pt-6 pb-6 space-y-2 md:space-y-5'>
+          <p className='text-3xl leading-7 tracking-tight text-gray-600  dark:text-gray-400 sm:text-4xl md:text-3xl'>
             {slug}
           </p>
         </div>
-        <div className="container py-6">
-          <div className="flex flex-wrap">{ImageLister()}</div>
-          <div className="pt-6 flex justify-center">
-            <CustomLink href="/gallery">
-              <button className="inline px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg shadow focus:outline-none focus:shadow-outline-blue hover:bg-blue-700 dark:hover:bg-blue-500">
+        <div className='container py-6'>
+          <div className='flex flex-wrap'>{ImageLister()}</div>
+          <div className='pt-6 flex justify-center'>
+            <CustomLink href='/gallery'>
+              <button
+                className='inline px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg shadow focus:outline-none focus:shadow-outline-blue hover:bg-blue-700 dark:hover:bg-blue-500'>
                 Back to Gallery
               </button>
             </CustomLink>
@@ -127,7 +127,7 @@ const Event = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Event;
+export default Event

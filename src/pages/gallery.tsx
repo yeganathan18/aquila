@@ -1,6 +1,12 @@
-import Card from '../components/Card';
+import CustomCard from '../components/CustomCard';
 
 const projectsData = [
+  {
+    title: 'Event Name',
+    description: `lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
+    imgSrc: '/assets/images/google.png',
+    href: '/gallery/event-name1',
+  },
   {
     title: 'Event Name',
     description: `lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
@@ -32,8 +38,7 @@ const Gallery = () => {
       <div className="container py-6">
         <div className="flex flex-wrap -m-4">
           {projectsData.map((d) => (
-            // eslint-disable-next-line react/jsx-no-undef
-            <Card
+            <CustomCard
               key={d.title}
               title={d.title}
               description={d.description}

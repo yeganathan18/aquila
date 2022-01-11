@@ -36,13 +36,22 @@ const rows = [
     'Computer Science',
     'BSc.CS, MCA'
   ),
+  createData(
+    'Deepak PS',
+    // eslint-disable-next-line no-useless-concat
+    'Technical Program\n' + 'Manager,\n' + 'Teleperformance USA',
+    'Post Graduate',
+    2007,
+    'Computer Science',
+    'BSc.CS, MCA'
+  ),
 ];
 
 const Alumni = () => {
   return (
     <div className="divide-y divide-gray-200 dark:divide-gray-700 max-w-screen-lg mx-auto px-3">
       <div className="pt-6 pb-6 space-y-2 md:space-y-5">
-        <p className="text-3xl leading-7 tracking-tight text-gray-600  dark:text-gray-400 sm:text-4xl md:text-4xl">
+        <p className="text-3xl leading-7 tracking-tight text-gray-600  dark:text-gray-400 sm:text-4xl md:text-3xl">
           Our Alumni
         </p>
       </div>
@@ -52,11 +61,11 @@ const Alumni = () => {
             <TableHead>
               <TableRow>
                 <TableCell>Name</TableCell>
-                <TableCell align="right">Occupation</TableCell>
-                <TableCell align="right">Qualification</TableCell>
-                <TableCell align="right">Year of completion</TableCell>
-                <TableCell align="right">Course</TableCell>
-                <TableCell align="right">
+                <TableCell align="center">Occupation</TableCell>
+                <TableCell align="center">Qualification</TableCell>
+                <TableCell align="center">Year of completion</TableCell>
+                <TableCell align="center">Course</TableCell>
+                <TableCell align="center">
                   Courses studied after Plus Two
                 </TableCell>
               </TableRow>
@@ -70,11 +79,11 @@ const Alumni = () => {
                   <TableCell component="th" scope="row">
                     {row.name}
                   </TableCell>
-                  <TableCell align="right">{row.Occupation}</TableCell>
-                  <TableCell align="right">{row.Qualification}</TableCell>
-                  <TableCell align="right">{row.Year_of_Completion}</TableCell>
-                  <TableCell align="right">{row.Course}</TableCell>
-                  <TableCell align="right">
+                  <TableCell align="center">{row.Occupation}</TableCell>
+                  <TableCell align="center">{row.Qualification}</TableCell>
+                  <TableCell align="center">{row.Year_of_Completion}</TableCell>
+                  <TableCell align="center">{row.Course}</TableCell>
+                  <TableCell align="center">
                     {row.Courses_studied_after_Plus_Two}
                   </TableCell>
                 </TableRow>
