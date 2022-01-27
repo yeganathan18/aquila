@@ -1,0 +1,63 @@
+### Python ###
+# Byte-compiled / optimized / DLL files
+**/__pycache__/
+db.sqlite3
+dump.sql
+
+# Distribution / packaging
+**/.Python
+**/env/
+**/venv/
+**/build/
+**/include/
+**/bin/
+**/lib/
+
+
+### Django ###
+*.pyc
+__pycache__/
+
+**/.env
+
+## db.sqlite3
+
+.idea
+.vscode
+# IntelliJ
+out/
+
+# webapp
+
+# dependencies
+webapp/node_modules
+webapp/.pnp
+.pnp.js
+
+# testing
+webapp/coverage
+
+# next.js
+webapp/.next/
+webapp/out/
+
+# production
+webapp/build
+
+# misc
+webapp/.DS_Store
+*.pem
+
+# debug
+webapp/npm-debug.log*
+webapp/yarn-debug.log*
+webapp/yarn-error.log*
+
+# local env files
+webapp/.env.local
+webapp/.env.development.local
+webapp/.env.test.local
+.env.production.local
+
+# vercel
+.vercel
