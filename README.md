@@ -1,7 +1,6 @@
 <p align="center">
-  <a href="https://github.com/syncrolaze" target="blank"><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pdrwbeh8ct1fzk665ns7.png" height="150" alt="aquila-logo" /></a>
+  <a href="https://gitlab.com/syncrolaze/aquila" target="_blank"><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pdrwbeh8ct1fzk665ns7.png" height="150" alt="aquila-logo" /></a>
 </p>
-
 
 <p align="center">
   <a href="#"><img src="https://badgen.net/badge/icon/gitlab?icon=gitlab&label"></a>
@@ -21,7 +20,9 @@ Aquila is an academic project which packs a lot of features together and built f
 - [PostgreSQL](https://www.postgresql.org/)
 - [GraphQL](https://graphql.org/)
 
-We use [GitLab](https://gitlab.com/syncrolaze) as our primary source control system and If your looking this project from [Github](https://github.com/syncrolaze/aquila) then probably it's a mirror of the GitLab repository.
+We use [GitLab](https://gitlab.com/syncrolaze/aquila) as our primary source control system and If your looking this project from [Github](https://github.com/syncrolaze/aquila) then probably it's a mirror of the GitLab instance.
+
+## Features
 
 
 
