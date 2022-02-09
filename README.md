@@ -24,6 +24,15 @@ We use [GitLab](https://gitlab.com/syncrolaze/aquila) as our primary source cont
 
 ## Features
 
+- [x] **Material UI:** Minimal, clean and responsive design.
+
+- [x] **SEO:** The advantages of this approach is to be able to create Rich User experiences in a uniform way, without compromising Search Engine Optimisation (SEO) factors that are key to good ranking on Google and other search engines.
+
+- [x] **Gallery:** A gallery of images, videos and documents.
+
+- [x] **Custom 404:** A custom 404 page for the website.
+
+- [x] **Clean Code:** The code is clean and well documented.
 
 
 ## License
