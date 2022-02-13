@@ -1,14 +1,14 @@
-<p align="center">
+<div align="center">
   <a href="https://gitlab.com/syncrolaze/aquila" target="_blank"><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pdrwbeh8ct1fzk665ns7.png" height="150" alt="aquila-logo" /></a>
-</p>
+</div>
 
-<p align="center">
+<div align="center">
   <a href="#"><img src="https://badgen.net/badge/icon/gitlab?icon=gitlab&label"></a>
   <a href="#"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>
   <a href="#"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
   <a href="#"><img src="https://img.shields.io/badge/code%20style-goodparts-brightgreen.svg?style=flat"></a>
   <a href="#"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"></a>
-</p> 
+</div> 
 
 Aquila is an academic project which packs a lot of features together and built for National Higher Secondary School, Kerala. This is an open-source project and developed by Team Syncrolaze.
 
@@ -33,7 +33,6 @@ We use [GitLab](https://gitlab.com/syncrolaze/aquila) as our primary source cont
 - [x] **Custom 404:** A custom 404 page for the website.
 
 - [x] **Clean Code:** The code is clean and well documented.
-
 
 ## License
 
