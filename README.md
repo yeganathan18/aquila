@@ -34,6 +34,10 @@ We use [GitLab](https://gitlab.com/syncrolaze/aquila) as our primary source cont
 
 - [x] **Clean Code:** The code is clean and well documented.
 
+## Contributing
+
+To see how to Contribute, visit [DEVELOPERS.md](DEVELOPERS.md).
+
 ## License
 
 This project is currently licensed under the **[MIT](LICENSE)**.  
