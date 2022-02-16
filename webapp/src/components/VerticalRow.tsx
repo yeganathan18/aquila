@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import className from 'classnames';
 import { useRouter } from 'next/router';
 

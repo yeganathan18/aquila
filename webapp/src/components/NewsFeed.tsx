@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Link from './Link'
 
 const NewsFeed = () => {

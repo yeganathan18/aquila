@@ -1,0 +1,7 @@
+---
+stages:
+  - test
+
+include:
+  - '/backend/.gitlab-ci.yml'
+  - '/webapp/.gitlab-ci.yml'
