@@ -1,7 +1,10 @@
-image: python:latest
+image: python:3.9-alpine
 
 services:
-  - postgres:latest
+  - postgres:12.2-alpine
+
+stages:
+  - "test"
 
 variables:
   POSTGRES_DB: postgres
@@ -14,9 +17,23 @@ cache:
     - ~/.cache/pip/
 
 before_script:
-  - apk update && apk add gcc musl-dev python3-dev libffi-dev openssl-dev cargo postgresql-dev jpeg-dev zlib-dev libxml2  libxml2-dev libxslt-dev build-base
+  - apk add --no-cache --virtual .build-deps ca-certificates gcc postgresql-dev linux-headers musl-dev libffi-dev jpeg-dev zlib-dev
+  - pip install --upgrade pip
   - pip install -r requirements.txt
 
-test:
+# migrations:
+#   stage: build
+#   script:
+#     - python3 manage.py makemigrations
+#     # - python3 manage.py makemigrations myapp
+#     - python3 manage.py migrate
+#     - python3 manage.py check
+
+django-tests:
+  stage: test
   script:
-    - python manage.py test
+    # The MYSQL user only gets permissions for MYSQL_DB, so Django can't create a test database.
+    # - echo "GRANT ALL on *.* to '${MYSQL_USER}';"| mysql -u root --password="${MYSQL_ROOT_PASSWORD}" -h mysql
+    # use python3 explicitly. see https://wiki.ubuntu.com/Python/3
+    - python3 manage.py test
+
