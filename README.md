@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://gitlab.com/syncrolaze/aquila" target="_blank"><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pdrwbeh8ct1fzk665ns7.png" height="150" alt="aquila-logo" /></a>
+  <a href="https://gitlab.com/syncrolaze/aquila" target="_blank"><img src="./assets/cover2x.png" height="150" alt="aquila-logo" /></a>
 </div>
 
 <div align="center">
