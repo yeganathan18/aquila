@@ -4,7 +4,9 @@
 
 ---
 
-<p align="center">An open-source full stack webapp, built for academic purposes.</p>
+<div align="center">
+  <p>An open-source full stack webapp, built for academic purposes.</p>
+</div>
 
 <div align="center">
   <a href="#"><img src="https://badgen.net/badge/icon/gitlab?icon=gitlab&label"></a>
