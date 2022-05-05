@@ -2,15 +2,23 @@
   <a href="https://gitlab.com/syncrolaze/aquila" target="_blank"><img src="./assets/cover2x.png" height="150" alt="aquila-logo" /></a>
 </div>
 
+---
+
+<p align="center">An open-source full stack webapp, built for academic purposes.</p>
+
 <div align="center">
   <a href="#"><img src="https://badgen.net/badge/icon/gitlab?icon=gitlab&label"></a>
   <a href="#"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>
   <a href="#"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
   <a href="#"><img src="https://img.shields.io/badge/code%20style-goodparts-brightgreen.svg?style=flat"></a>
   <a href="#"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"></a>
-</div> 
+</div>
+
+## About
 
 Aquila is an academic project which packs a lot of features together and built for National Higher Secondary School, Kerala. This is an open-source project and developed by Team Syncrolaze.
+
+<!-- Few more words about the project -->
 
 ## Built with
 
@@ -26,13 +34,15 @@ We use [GitLab](https://gitlab.com/syncrolaze/aquila) as our primary source cont
 
 - [x] **Material UI:** Minimal, clean and responsive design.
 
-- [x] **SEO:** The advantages of this approach is to be able to create Rich User experiences in a uniform way, without compromising Search Engine Optimisation (SEO) factors that are key to good ranking on Google and other search engines.
+- [x] **SEO:** Rich User experiences in a uniform way, without compromising Search Engine Optimisation (SEO) factors that are key to good ranking on Google and other search engines.
 
-- [x] **Gallery:** A gallery of images, videos and documents.
+- [x] **Gallery Page:** A gallery of images, videos and documents.
 
 - [x] **Custom 404:** A custom 404 page for the website.
 
 - [x] **Clean Code:** The code is clean and well documented.
+
+If you have any feature requests or suggestions, please feel free to open an issue on [GitLab](https://gitlab.com/syncrolaze/aquila).
 
 ## Contributing
 
@@ -40,6 +50,6 @@ To see how to Contribute, visit [DEVELOPERS.md](DEVELOPERS.md).
 
 ## License
 
-This project is currently licensed under the **[MIT](LICENSE)**.  
+This project is currently licensed under the **[MIT](LICENSE)**  
 
-Copyright 2022 Syncrolaze
+Copyright 2022 Syncrolaze.
