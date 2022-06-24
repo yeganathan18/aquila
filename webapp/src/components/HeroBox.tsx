@@ -14,14 +14,14 @@ const HeroBox = () => {
             title={
               <>
                 {'National Higher Secondary School\n'}
-                <span className="text-primary-500">React developers</span>
+                <span className="text-primary-500">Welcomes you</span>
               </>
             }
-            description="The easiest way to build a React landing page in seconds."
+            description={JSON.stringify("The ink of the scholar is more holy than the blood of the martyr")}
             button={
-              <Link href="https://creativedesignsguru.com/category/nextjs/">
-                <a>
-                  <Button xl>Know More</Button>
+              <Link href="#">
+                <a className="text-blue">
+                 <Button>Know More ↓</Button> 
                 </a>
               </Link>
             }

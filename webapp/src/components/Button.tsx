@@ -14,7 +14,7 @@ const Button = (props: IButtonProps) => {
   });
 
   return (
-    <div className={btnClass}>
+    <div className="bg-blue-500 mx-auto w-max hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
       {props.children}
 
       <style jsx>

@@ -3,7 +3,7 @@ import { VerticalRow } from '../components/VerticalRow';
 
 const VerticalFeatures = () => (
   <Section
-    title="About"
+    title="Who are we?"
     description="National School is run along the lines of the best school's in the Kerala's educational practices. It provides a cutting edge academic programme with state of the art infrastructure and facilities for not just the gifted but any upwardly mobile Kerala students here, students acquire an excellent education in a rich kerala context."
   >
     <VerticalRow
