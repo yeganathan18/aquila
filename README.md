@@ -24,11 +24,19 @@ Aquila is an academic project which packs a lot of features together and built f
 
 ## Built with
 
-- [Django](https://www.djangoproject.com/)
-- [NextJS](https://nextjs.org/)
-- [Docker](https://www.docker.com/)
-- [PostgreSQL](https://www.postgresql.org/)
-- [GraphQL](https://graphql.org/)
+  <!-- List of technologies used in the project -->
+<div>
+  <img src="https://img.icons8.com/color/128/000000/typescript.png" alt="typescript" width="50" height="50" />
+  <img src="https://img.icons8.com/color/128/000000/react-native.png" alt="react" width="50" height="50" />
+  <img src="https://img.icons8.com/color/128/000000/python.png" alt="python" width="50" height="50" />
+  <img src="https://img.icons8.com/color/128/000000/django.png" alt="django" width="50" height="50" />
+  <img src="https://img.icons8.com/color/128/000000/graphql.png" alt="graphql" width="50" height="50" />
+  <img src="https://img.icons8.com/color/128/000000/docker.png" alt="docker" width="50" height="50" />
+  <img src="https://img.icons8.com/color/128/000000/postgresql.png" alt="postgresql" width="50" height="50" />
+  <img src="https://www.vectorlogo.zone/logos/nginx/nginx-icon.svg" alt="nginx" width="36" height="36" />
+</div>
+
+<br>
 
 We use [GitLab](https://gitlab.com/syncrolaze/aquila) as our primary source control system and If your looking this project from [Github](https://github.com/syncrolaze/aquila) then probably it's a mirror of the GitLab instance.
 
