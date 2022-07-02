@@ -5,7 +5,7 @@
 ---
 
 <div align="center">
-  <p>An open-source full stack webapp, built for academic purposes.</p>
+  <p>An open-source full stack webapp with awesome features, built for academic purposes.</p>
 </div>
 
 <div align="center">
@@ -18,7 +18,7 @@
 
 ## About
 
-Aquila is an academic project which packs a lot of features together and built for National Higher Secondary School, Kerala. This is an open-source project and developed by Team Syncrolaze.
+Aquila is an academic project which packs a lot of features together and built for National Higher Secondary School, Kerala. This is an open-source project developed by THC (The HTTP Company).
 
 <!-- Few more words about the project -->
 
@@ -38,7 +38,7 @@ Aquila is an academic project which packs a lot of features together and built f
 
 <br>
 
-We use [GitLab](https://gitlab.com/syncrolaze/aquila) as our primary source control system and If your looking this project from [Github](https://github.com/syncrolaze/aquila) then probably it's a mirror of the GitLab instance.
+We use [GitLab](https://gitlab.com/httpcompany/aquila) as our primary source control system and If your looking this project from [Github](https://github.com/httpcompany/aquila) then probably it's a mirror of the GitLab instance.
 
 ## Features
 
@@ -61,5 +61,3 @@ To see how to Contribute, visit [DEVELOPERS.md](DEVELOPERS.md).
 ## License
 
 This project is currently licensed under the **[MIT](LICENSE)**  
-
-Copyright 2022 Syncrolaze.
