@@ -23,7 +23,7 @@ function Copyright(props: ICopyWriteProps) {
     >
       {'Built by '}
       <Link color="primary" className="no-underline" href="https://mui.com/">
-        Syncrolaze
+        THC
       </Link>{' '}
     </Typography>
   );

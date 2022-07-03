@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://gitlab.com/syncrolaze/aquila" target="_blank"><img src="./assets/cover2x.png" height="150" alt="aquila-logo" /></a>
+  <a href="https://gitlab.com/httpcompany/aquila" target="_blank"><img src="./assets/cover2x.png" height="150" alt="aquila-logo" /></a>
 </div>
 
 ---
@@ -52,7 +52,7 @@ We use [GitLab](https://gitlab.com/httpcompany/aquila) as our primary source con
 
 - [x] **Clean Code:** The code is clean and well documented.
 
-If you have any feature requests or suggestions, please feel free to open an issue on [GitLab](https://gitlab.com/syncrolaze/aquila).
+If you have any feature requests or suggestions, please feel free to open an issue on [GitLab](https://gitlab.com/httpcompany/aquila).
 
 ## Contributing
 

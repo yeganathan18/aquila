@@ -19,7 +19,7 @@ Before you can build Aquila, you must install and configure the following depend
 
 ### Forking Aquila on Github
 
-To contribute code to Aquila, you must fork the [Aquila Repository](https://gitlab.com/syncrolaze/aquila) in GitLab. After you fork the repository, you may now begin editing the source code.
+To contribute code to Aquila, you must fork the [Aquila Repository](https://gitlab.com/httpcompany/aquila) in GitLab. After you fork the repository, you may now begin editing the source code.
 
 ## Building Aquila
 
@@ -40,7 +40,7 @@ To build Aquila, you clone the source code repository:
 3. You can then add the Aquila repository to sync with upstream changes:
 
    ```sh
-   $ git remote add <remote-name> https://gitlab.com/syncrolaze/aquila.git
+   $ git remote add <remote-name> https://gitlab.com/httpcompany/aquila.git
    ```
 
 4. Build Aquila:
@@ -64,11 +64,11 @@ To build Aquila, you clone the source code repository:
 
 Before you start a development server, you must choose if you want to work on the Aquila Backend or Frontend.
 
-- Go to the [Aquila Backend](https://gitlab.com/syncrolaze/aquila/-/tree/main/backend) directory
+- Go to the [Aquila Backend](https://gitlab.com/httpcompany/aquila/-/tree/main/backend) directory
   ```sh
   cd backend
   ```
-  Go to the [Aquila Frontend](https://gitlab.com/syncrolaze/aquila/-/tree/main/webapp) directory
+  Go to the [Aquila Frontend](https://gitlab.com/httpcompany/aquila/-/tree/main/webapp) directory
   ```sh
   cd webapp
   ```
