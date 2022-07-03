@@ -131,7 +131,7 @@ When you're done making changes and you'd like to propose them for review by ope
 
 ### Your MR is merged!
 
-Congratulations! you made your first MR, the Syncrolaze community thanks you 🙏🏼
+Congratulations! you made your first MR, thank you 🙏🏼
 
 ### Why the initial commits in the repository are not proper?
 
