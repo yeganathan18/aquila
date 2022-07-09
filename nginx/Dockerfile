@@ -1,5 +1,9 @@
 FROM nginx:stable-alpine
 
-RUN rm /etc/nginx/conf.d/default.conf
+EXPOSE 80
 
-ADD ./nginx.conf /etc/nginx/conf.d/nginx.conf
+RUN rm /usr/share/nginx/html/*
+
+COPY default.conf /etc/nginx/conf.d/default.conf
+
+CMD [ "nginx", "-g", "daemon off;" ]

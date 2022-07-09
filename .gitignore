@@ -6,7 +6,6 @@ dump.sql
 
 # Distribution / packaging
 **/.Python
-**/env/
 **/venv/
 **/build/
 **/include/
@@ -61,3 +60,6 @@ webapp/.env.test.local
 
 # vercel
 .vercel
+
+# env files
+prod.env

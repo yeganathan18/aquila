@@ -12,24 +12,25 @@ services:
       - POSTGRES_HOST=db
     networks:
       - core
-    ports:
-      - 5432:5432
+    # ports:
+    #   - 5432:5432
     volumes:
       - ./backend/dump.sql:/docker-entrypoint-initdb.d/dump.sql
   backend:
     container_name: aquila_backend
     build:
-      context: backend
+      context: ./backend/docker
       dockerfile: Dockerfile
-    command: 
-      # ["python", "manage.py", "runserver", "0.0.0.0:8000"]
-      ["gunicorn", "--bind", ":8000", "backend.wsgi:application"]
+    # command: 
+    #   ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+    env_file:
+      - ./env/backend.env
     volumes:
       - ./backend:/app/backend
       - /var/run/docker.sock:/var/run/docker.sock
       - static:/app/backend/static
-    ports:
-      - 8000:8000
+    # ports:
+    #   - 8000:8000
     networks:
       - core
     links:
@@ -37,25 +38,23 @@ services:
   webapp:
     container_name: aquila_webapp
     build:
-      context: webapp
+      context: ./webapp/docker
       dockerfile: Dockerfile
     networks:
       - core
-    command:
-      "npm run dev"
     volumes:
-      - ./webapp:/webapp
-      - /var/run/docker.sock:/var/run/docker.sock
-      - node-modules:/webapp/node_modules
-    ports:
-      - 3000:3000
+      - ./webapp:/app
+      - /app/node_modules
+      - /app/.next
+    # ports:
+    #   - 3000:3000
     links:
       - backend:backend
   nginx:
     container_name: aquila_nginx
     image: nginx
     build:
-      context: nginx
+      context: ./nginx
       dockerfile: Dockerfile
     volumes:
       - static:/app/backend/static
@@ -66,7 +65,6 @@ services:
       - webapp
     networks:
       - core
-    command: [nginx-debug, '-g', 'daemon off;']
 
 networks:
   core:
