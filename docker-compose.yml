@@ -6,11 +6,9 @@ services:
     restart: always
     image: postgres:13-alpine
     env_file:
-      - ./backend/env/postgres.env
+      - ./postgres/db.env
     networks:
       - core
-    # ports:
-    #   - 5432:5432
     volumes:
       - ./backend/dump.sql:/docker-entrypoint-initdb.d/dump.sql
   backend:
@@ -19,13 +17,11 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     env_file:
-      - ./backend/env/prod.env
+      - ./backend/prod.env
     volumes:
       - ./backend:/app/backend
       - /var/run/docker.sock:/var/run/docker.sock
       - static:/app/backend/static
-    # ports:
-    #   - 8000:8000
     networks:
       - core
     links:
@@ -41,8 +37,6 @@ services:
       - ./webapp:/app
       - /app/node_modules
       - /app/.next
-    # ports:
-    #   - 3000:3000
     links:
       - backend:backend
   nginx:

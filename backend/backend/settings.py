@@ -4,16 +4,15 @@ from environs import Env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-ENV_DIR = BASE_DIR / 'env'
 
 env = Env()
+env.read_env(os.path.join(BASE_DIR, 'prod.env'))
 
 if os.environ.get('MODE') == 'dev':
     DEBUG = True
     SECRET_KEY = '*'
     print('Using development settings...')
 else:
-    env.read_env(os.path.join(ENV_DIR, 'prod.env'))
     DEBUG = False
     SECRET_KEY = env('SECRET_KEY') # keep the secret key used in production secret!
     print('Using production settings...')
@@ -64,19 +63,17 @@ TEMPLATES = [
 WSGI_APPLICATION = 'backend.wsgi.application'
 
 if os.environ.get('MODE') == 'dev':
-    env.read_env(os.path.join(BASE_DIR, 'backend.env'))
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': env('DATABASE_NAME'),
-            'USER': env('DATABASE_USER'),
-            'PASSWORD': env('DATABASE_PASSWORD'),
-            'HOST': env('DATABASE_HOST'),
-            'PORT': env('DATABASE_PORT'),
+            'NAME': 'postgres',
+            'USER': 'postgres',
+            'PASSWORD': 'postgres',
+            'HOST': 'localhost',
+            'PORT': '5432',
         }
     }
 else:
-    env.read_env(os.path.join(BASE_DIR, 'prod.env'))
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
