@@ -14,17 +14,17 @@ FROM node:alpine as build
 
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci
+RUN npm install
 COPY . ./
 RUN npm run build
 
 # remove dev dependencies
 RUN npm prune --production
 
-COPY --from=build /app/package.json ./package.json
-COPY --from=build /app/node_modules ./node_modules
-COPY --from=build /app/.next ./.next
-COPY --from=build /app/public ./public
-COPY --from=build /app/next.config.js ./next.config.js
+# COPY --from=build /app/package.json ./package.json
+# COPY --from=build /app/node_modules ./node_modules
+# COPY --from=build /app/.next ./.next
+# COPY --from=build /app/public ./public
+# COPY --from=build /app/next.config.js ./next.config.js
 
 CMD ["npm", "start"]

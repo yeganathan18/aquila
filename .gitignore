@@ -61,5 +61,5 @@ webapp/.env.test.local
 # vercel
 .vercel
 
-# env files
-prod.env
+# prod env files
+backend/env/prod.env
