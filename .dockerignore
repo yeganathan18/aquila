@@ -1,3 +1,6 @@
-#Ignoring git and cache folders
-.git
-.cache
+webapp/Dockerfile
+.dockerignore
+webapp/node_modules
+webapp/npm-debug.log
+webapp/README.md
+webapp/.next
