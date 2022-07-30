@@ -1,6 +1,0 @@
-webapp/Dockerfile
-.dockerignore
-webapp/node_modules
-webapp/npm-debug.log
-webapp/README.md
-webapp/.next
