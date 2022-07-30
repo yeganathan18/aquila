@@ -1,140 +1,34 @@
-# Developing Aquila
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-- [Development Setup](##Development-Setup)
-- [Installing Dependencies](###Installing-Dependencies)
-- [Building Aquila](##Building-Aquila)
-- [Start a Development Server](##Start-a-Development-Server)
-- [What's Next?](##What's-Next)
+## Getting Started
 
-## Development Setup
+First, run the development server:
 
-This document describes how to set up your development environment to build and test Aquila.
-
-### Installing Dependencies
-
-Before you can build Aquila, you must install and configure the following dependencies on your machine:
-
-- [Git](https://git-scm.com/downloads)
-- [Docker engine](https://docs.docker.com/engine/install/)
-
-### Forking Aquila on Github
-
-To contribute code to Aquila, you must fork the [Aquila Repository](https://gitlab.com/httpcompany/aquila) in GitLab. After you fork the repository, you may now begin editing the source code.
-
-## Building Aquila
-
-To build Aquila, you clone the source code repository:
-
-1. Clone your Github forked repository:
-
-   ```sh
-   git clone https://gitlab.com/<gitlab_username>/aquila.git
-   ```
-
-2. Go to the Aquila directory:
-
-   ```sh
-   cd aquila
-   ```
-
-3. You can then add the Aquila repository to sync with upstream changes:
-
-   ```sh
-   $ git remote add <remote-name> https://gitlab.com/httpcompany/aquila.git
-   ```
-
-4. Build Aquila:
-
-   ```sh
-   docker compose build
-   ```
-
-5. To migrate the database, you can run the following command:
-
-   ```sh
-   docker-compose run backend python manage.py migrate
-   ```
-
-6. Create superuser:
-   ```sh
-   docker-compose run backend python manage.py createsuperuser
-   ```
-
-### Choosing Directory
-
-Before you start a development server, you must choose if you want to work on the Aquila Backend or Frontend.
-
-- Go to the [Aquila Backend](https://gitlab.com/httpcompany/aquila/-/tree/main/backend) directory
-  ```sh
-  cd backend
-  ```
-  Go to the [Aquila Frontend](https://gitlab.com/httpcompany/aquila/-/tree/main/webapp) directory
-  ```sh
-  cd webapp
-  ```
-
-## Start a Development Server
-
-To debug code, and to see changes in real time, it is often useful to have a local HTTP server. Since our whole project is dockerized, we can use the Docker Compose tool to start a development server.
-
-1. Start the development server:
-
-   ```sh
-   docker-compose up -d
-   ```
-
-   > Before starting the server, you must start the docker engine
-
-2. The project is been served using nginix and gunicorn, so accessing the respective parts is even more easy. Open your browser and navigate to:
-
-   ```sh
-   # Backend
-   http://localhost/api/admin
-
-   # GraphiQL Playground
-   http://localhost/api/graphiql
-
-   # Frontend
-   http://localhost/
-   ```
-
-3. To stop the development server, run:
-   ```sh
-   docker-compose down
-   ```
-
-### Installing Packages/Libraries
-
-When we are developing, we often need to install libraries and packages. We can do this by using these commands:
-
-```sh
-# Backend
-docker-compose run backend pip install <package>
-
-# Frontend
-docker-compose run backend npm install <package>
+```bash
+npm run dev
+# or
+yarn dev
 ```
 
-## What's Next?
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Make your changes to the file(s) you'd like to update.
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-### Open a Merge request
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-When you're done making changes and you'd like to propose them for review by opening a merge request.
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-### Submit your PR & get it reviewed
+## Learn More
 
-- Once you submit your MR, others from the team will review it with you. The first thing you're going to want to do is a self review.
-- After that, we may have questions, check back on your MR to keep up with the conversation.
-- Did you have an issue, like a merge conflict? Check out GitHub's git tutorial on how to resolve merge conflicts and other issues.
+To learn more about Next.js, take a look at the following resources:
 
-### Your MR is merged!
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Congratulations! you made your first MR, thank you 🙏🏼
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-### Why the initial commits in the repository are not proper?
+## Deploy on Vercel
 
-Initially we made Aquila in a multi repository architecture, but later we decided to make it in a single repository. This is because we want to make sure that the code is clean and well organized.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-We follow the [conventional commit](https://www.conventionalcommits.org/en/v1.0.0/) guidelines to make sure that the code is well organized.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
