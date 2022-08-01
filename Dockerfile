@@ -3,7 +3,7 @@ FROM node:16-alpine AS deps
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 COPY package.json package-lock.json ./ 
-RUN npm ci
+RUN yarn ci
 
 # Rebuild the source code only when needed
 FROM node:16-alpine AS builder
@@ -12,10 +12,10 @@ COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
 ENV NEXT_TELEMETRY_DISABLED 1
-RUN npm run build
+RUN yarn run build
 
 # remove dev dependencies
-RUN npm prune --production
+RUN yarn prune --production
 
 # Production image, copy all the files and run next
 FROM node:16-alpine AS runner
@@ -47,4 +47,4 @@ EXPOSE 3000
 
 ENV PORT 3000
 
-CMD ["npm", "start"]
+CMD ["yarn", "start"]
