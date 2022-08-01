@@ -4,10 +4,10 @@ import { Logo } from '../templates/Logo';
 import { AppConfig } from '../utils/AppConfig';
 import { Background } from './Background';
 import Footer from './Footer';
-import { headerNavLinks } from './headerNavLinks';
 import { Meta } from './Meta';
 import MobileNav from './MobileNav';
 import { Section } from './Section';
+import HeaderNavLinks from './HeaderNavLinks';
 
 const LayoutWrapper = ({ children }) => {
   return (
@@ -27,9 +27,9 @@ const LayoutWrapper = ({ children }) => {
             </div>
             <div className="flex items-center text-base leading-5">
               <div className="hidden sm:block">
-                {headerNavLinks.map((link) => (
+                {HeaderNavLinks.map((link) => (
                   <Link key={link.title} href={link.href}>
-                    <a className="font-medium text-xl text-gray-900 sm:p-3 dark:text-gray-100">
+                    <a className="font-medium text-xl text-gray-600 sm:p-3">
                       {link.title}
                     </a>
                   </Link>

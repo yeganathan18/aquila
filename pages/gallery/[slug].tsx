@@ -109,9 +109,9 @@ const Event = () => {
 
   return (
     <>
-      <div className='divide-y divide-gray-200 dark:divide-gray-700 max-w-screen-lg mx-auto px-3'>
+      <div className='divide-y divide-gray-200 max-w-screen-lg mx-auto px-3'>
         <div className='pt-6 pb-6 space-y-2 md:space-y-5'>
-          <p className='text-3xl leading-7 tracking-tight text-gray-600  dark:text-gray-400 sm:text-4xl md:text-3xl'>
+          <p className='text-3xl leading-7 tracking-tight text-gray-600 sm:text-4xl md:text-3xl'>
             {slug}
           </p>
         </div>
@@ -120,7 +120,7 @@ const Event = () => {
           <div className='pt-6 flex justify-center'>
             <CustomLink href='/gallery'>
               <button
-                className='inline px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg shadow focus:outline-none focus:shadow-outline-blue hover:bg-blue-700 dark:hover:bg-blue-500'>
+                className='inline px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg shadow focus:outline-none focus:shadow-outline-blue hover:bg-blue-700 '>
                 Back to Gallery
               </button>
             </CustomLink>

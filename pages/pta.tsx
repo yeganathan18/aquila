@@ -43,9 +43,9 @@ const content = [
 
 const Pta = () => {
   return (
-    <div className="divide-y divide-gray-200 dark:divide-gray-700 max-w-screen-lg mx-auto px-3">
+    <div className="divide-y divide-gray-20 max-w-screen-lg mx-auto px-3">
       <div className="pt-6 pb-6 space-y-2 md:space-y-5">
-        <p className="text-3xl leading-7 tracking-tight text-gray-600  dark:text-gray-400 sm:text-4xl md:text-3xl">
+        <p className="text-3xl leading-7 tracking-tight text-gray-600 sm:text-4xl md:text-3xl">
           PTA
         </p>
       </div>

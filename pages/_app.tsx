@@ -1,8 +1,8 @@
 import { AppProps } from 'next/app';
-
 import LayoutWrapper from '../components/LayoutWrapper';
 
-import '../styles/main.css';
+import '../styles/globals.css'
+
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <LayoutWrapper>
