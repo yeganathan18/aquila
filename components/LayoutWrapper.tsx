@@ -2,7 +2,6 @@ import Link from 'next/link';
 
 import { Logo } from '../templates/Logo';
 import { AppConfig } from '../utils/AppConfig';
-import { Background } from './Background';
 import Footer from './Footer';
 import { Meta } from './Meta';
 import MobileNav from './MobileNav';
@@ -12,8 +11,8 @@ import HeaderNavLinks from './HeaderNavLinks';
 const LayoutWrapper = ({ children }) => {
   return (
     <>
-      <Background color="bg-gray-100">
-        <Section yPadding="py-6">
+      <div className='bg-blue-50'>
+        <Section yPadding="py-4">
           <header className="flex items-center justify-between">
             <Meta title={AppConfig.title} description={AppConfig.description} />
             <div>
@@ -39,7 +38,7 @@ const LayoutWrapper = ({ children }) => {
             </div>
           </header>
         </Section>
-      </Background>
+      </div>
       <main className="mb-auto">{children}</main>
       <Footer />
     </>

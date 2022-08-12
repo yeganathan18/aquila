@@ -7,6 +7,7 @@ import GlobalStyles from '@mui/material/GlobalStyles';
 import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 
 type ICopyWriteProps = {
   children: ReactNode;
@@ -22,7 +23,7 @@ function Copyright(props: ICopyWriteProps) {
       {...props}
     >
       {'Built by '}
-      <Link color="primary" className="no-underline" href="https://mui.com/">
+      <Link color="primary" className="no-underline" href="https://github.com/yeganathan18/aquila">
         THC
       </Link>{' '}
     </Typography>
@@ -73,43 +74,22 @@ const Footer = () => {
         styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }}
       />
       <CssBaseline />
-      {/* Footer */}
-      <Container
-        maxWidth="md"
-        component="footer"
-        sx={{
-          borderTop: (theme) => `1px solid ${theme.palette.divider}`,
-          py: [3, 6],
-        }}
-      >
-        <Grid container spacing={4} justifyContent="space-evenly">
-          {footers.map((footer) => (
-            <Grid item xs={6} sm={3} key={footer.title}>
-              <Typography variant="h6" color="text.primary" gutterBottom>
-                {footer.title}
-              </Typography>
-              <ul>
-                {footer.description.map((item) => (
-                  <li key={item.name}>
-                    <Link
-                      href={item.link}
-                      variant="subtitle1"
-                      underline="none"
-                      color="#3399ff"
-                      fontWeight="700"
-                    >
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </Grid>
-          ))}
-        </Grid>
-        {/* @ts-ignore */}
-        <Copyright sx={{ mt: 5 }} />
+      <Container maxWidth="lg">
+      <Box sx={{ display: 'flex', flexDirection: 'row'}}>
+        <Link href='/'>
+          About
+        </Link>
+        <Link href='/'>
+          Gallery
+        </Link>
+        <Link href='/'>
+          Alumni
+        </Link>
+        <Link href='/'>
+          Contact
+        </Link>
+      </Box>
       </Container>
-      {/* End footer */}
     </React.Fragment>
   );
 };

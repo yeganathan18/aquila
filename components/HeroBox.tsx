@@ -1,6 +1,4 @@
 import Link from 'next/link'
-
-import { Background } from './Background'
 import { Button } from './Button'
 import { HeroOneButton } from './HeroOneButton'
 import { Section } from './Section'
@@ -8,7 +6,7 @@ import { Section } from './Section'
 const HeroBox = () => {
   return (
     <>
-      <Background color="bg-gray-100">
+    <div className="bg-blue-50">
         <Section yPadding="pt-20 pb-32">
           <HeroOneButton
             title='National Higher Secondary School'
@@ -24,7 +22,7 @@ const HeroBox = () => {
             }
           />
         </Section>
-      </Background>
+      </div>
     </>
   )
 }

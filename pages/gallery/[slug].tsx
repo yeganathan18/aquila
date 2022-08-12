@@ -6,7 +6,7 @@ import ImageList from '@mui/material/ImageList'
 import ImageListItem from '@mui/material/ImageListItem'
 import { useRouter } from 'next/router'
 
-import CustomLink from '../../components/Link'
+import Link from 'next/link'
 
 const itemData = [
   {
@@ -118,12 +118,12 @@ const Event = () => {
         <div className='container py-6'>
           <div className='flex flex-wrap'>{ImageLister()}</div>
           <div className='pt-6 flex justify-center'>
-            <CustomLink href='/gallery'>
+            <Link href='/gallery'>
               <button
                 className='inline px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg shadow focus:outline-none focus:shadow-outline-blue hover:bg-blue-700 '>
                 Back to Gallery
               </button>
-            </CustomLink>
+            </Link>
           </div>
         </div>
       </div>

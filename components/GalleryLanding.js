@@ -21,7 +21,6 @@ const CardLister = (year) => {
   });
 };
 const HandleClick = (id) => {
-    
     if (id === "all") {
       document.getElementById("2020").style.display = "block";
       document.getElementById("2021").style.display = "block";
@@ -44,41 +43,38 @@ const HandleClick = (id) => {
     }
   }
 const Landing = () => {
-
   return (
     <div className="max-w-screen-lg mx-auto px-3 items-center justify-center flex flex-col">
       <div className="flex gap-6 pt-12 flex-wrap m-2">
         <Button
           variant="contained"
-          className="focus:outline-none focus:ring focus:ring-300"
           onClick={() => HandleClick("all")}
         >
           <p>All</p>
         </Button>
         <Button
           variant="contained"
-          className="focus:outline-none focus:ring focus:ring-300"
+          
           onClick={() => HandleClick("2020")}
         >
           <p>Events-2020</p>
         </Button>
         <Button
           variant="contained"
-          className="focus:outline-none focus:ring focus:ring-300"
+          
           onClick={() => HandleClick("2021")}
         >
           <p>Events-2021</p>
         </Button>
         <Button
           variant="contained"
-          className="focus:outline-none focus:ring focus:ring-300"
+          
           onClick={() => HandleClick("2022")}
         >
           <p>Events-2022</p>
         </Button>
       </div>
       <div
-        className="bg-slate-800 p-4 shadow-lg rounded-lg overflow-hidden visible"
         id="2020"
       >
         <Typography variant="h4" color="grey" className="m-2">
@@ -89,7 +85,6 @@ const Landing = () => {
         </div>
       </div>
       <div
-        className="bg-slate-800 p-4 shadow-lg rounded-lg overflow-hidden visible"
         id="2021"
       >
         <Typography variant="h4" color="grey" className="m-2">
@@ -100,7 +95,6 @@ const Landing = () => {
         </div>
       </div>
       <div
-        className="bg-slate-800 p-4 shadow-lg rounded-lg overflow-hidden visible"
         id="2022"
       >
         <Typography variant="h4" color="grey" className="m-2">
